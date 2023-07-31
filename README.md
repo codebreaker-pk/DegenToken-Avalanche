@@ -32,15 +32,6 @@ npx hardhat compile
 ```
 
 
-## Testing on Avalanche Fuji Testnet
-To run tests on the Avalanche Fuji Testnet, make sure you have the Avalanche Fuji Testnet deployed and an Avalanche wallet. Edit the hardhat.config.js file to set up your wallet credentials and network details for the "fuji" network.
-
-After configuration, run the tests on the Avalanche Fuji Testnet with the following command:
-
-```bash
-npx hardhat test --network fuji
-```
-
 ## Deployment
 To deploy the Degen Gaming Avalanche ERC-20 Token to the Avalanche network, you need to have the Avalanche Fuji Testnet deployed and an Avalanche wallet. Edit the hardhat.config.js file to set up your wallet credentials and network details.
 
@@ -50,6 +41,16 @@ After configuration, deploy the contract to the Avalanche Fuji Testnet with the 
 ```bash
 npx hardhat run --network fuji scripts/deploy.js
 ```
+
+## Testing on Avalanche Fuji Testnet
+To run tests on the Avalanche Fuji Testnet, make sure you have the Avalanche Fuji Testnet deployed and an Avalanche wallet. Edit the hardhat.config.js file to set up your wallet credentials and network details for the "fuji" network.
+
+After configuration, run the tests on the Avalanche Fuji Testnet with the following command:
+
+```bash
+npx hardhat test --network fuji
+```
+
 ## Verification on SnowTrace
 After deploying the contract to the Avalanche Fuji Testnet, you can verify the smart contract on SnowTrace for transparency and security. Use the contract's address and the source code provided in the verification process.
 
