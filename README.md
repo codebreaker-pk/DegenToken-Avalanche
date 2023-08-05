@@ -1,58 +1,47 @@
-# Degen Gaming Avalanche ERC-20 Token
+# DegenToken Smart Contract
 
-## Overview
-
-Degen Gaming Avalanche ERC-20 Token is an Avalanche-based ERC-20 token that serves as a reward and utility token within the Degen Gaming platform. The token contract provides the necessary functionality to create new tokens, transfer them between users, allow token redemption for in-game items, check token balances, and burn tokens when they are no longer needed.
+DegenToken is an Ethereum-based ERC20 token contract with additional features for minting, transferring, and redeeming tokens. It also includes functionality for in-game store redemptions.
 
 ## Features
 
-- Minting new tokens: The owner can create and distribute new tokens as rewards.
-- Transferring tokens: Users can transfer their tokens to other addresses.
-- Redeeming tokens: Users can redeem their tokens for in-game items within the Degen Gaming platform.
-- Checking token balance: Users can check their token balance at any time.
-- Burning tokens: Any token holder can burn tokens they own that are no longer needed.
+- Minting tokens by the contract owner.
+- Transferring tokens between addresses.
+- Redeeming tokens for in-game store items with randomized prize selection.
+- Balance checking for token holders.
+- Burning tokens to reduce total supply.
 
 ## Getting Started
 
-Follow these steps to get started with the Degen Gaming Avalanche ERC-20 Token project:
+### Deploying on Avalanche Fuji C-Chain
 
-1. Clone the repository:
-```
-git clone https://github.com/codebreaker-pk/DegenToken-Avalanche.git
-cd DegenToken.
-```
+1. Open your project in VS Code.
 
+2. Deploy the contract to the Avalanche Fuji C-Chain:
+**npx hardhat run scripts/deploy.js --network fuji**
 
-## Compilation
+Copy the deployed contract address from the terminal.
 
-To compile the smart contract, run:
+## Remix Setup
+- Go to Remix.
+- Create a new Solidity file named DegenToken.sol.
 
-```bash
-npx hardhat compile
-```
+- Copy and paste the content of the DegenToken.sol contract from this repository into the Remix editor.
 
+## Usage
+- To use the DegenToken contract in Remix:
 
-## Deployment
-To deploy the Degen Gaming Avalanche ERC-20 Token to the Avalanche network, you need to have the Avalanche Fuji Testnet deployed and an Avalanche wallet. Edit the hardhat.config.js file to set up your wallet credentials and network details.
+- Connect to the Avalanche Fuji C-Chain in Remix:
 
-After configuration, deploy the contract to the Avalanche Fuji Testnet with the following command:
+- In the Remix sidebar, navigate to the "Deploy & Run Transactions" tab.
+- In the "Environment" dropdown, select "Injected Web3" and connect to the Avalanche Fuji C-Chain.
+- Paste the contract address copied earlier into the "At Address" field.
+## Deploy the contract:
 
+- Select the DegenToken contract from the dropdown.
+- Deploy the contract by clicking the "Deploy" button.
+## Interact with the contract:
 
-```bash
-npx hardhat run --network fuji scripts/deploy.js
-```
-
-## Testing on Avalanche Fuji Testnet
-To run tests on the Avalanche Fuji Testnet, make sure you have the Avalanche Fuji Testnet deployed and an Avalanche wallet. Edit the hardhat.config.js file to set up your wallet credentials and network details for the "fuji" network.
-
-After configuration, run the tests on the Avalanche Fuji Testnet with the following command:
-
-```bash
-npx hardhat test --network fuji
-```
-
-## Verification on SnowTrace
-After deploying the contract to the Avalanche Fuji Testnet, you can verify the smart contract on SnowTrace for transparency and security. Use the contract's address and the source code provided in the verification process.
+- Use the contract interface to call functions, mint tokens, transfer tokens, redeem prizes, etc.
 
 ## Author
 
