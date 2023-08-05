@@ -17,9 +17,9 @@ DegenToken is an Ethereum-based ERC20 token contract with additional features fo
 1. Open your project in VS Code.
 
 2. Deploy the contract to the Avalanche Fuji C-Chain:
-**npx hardhat run scripts/deploy.js --network fuji**
+- **npx hardhat run scripts/deploy.js --network fuji**
 
-Copy the deployed contract address from the terminal.
+3. Copy the deployed contract address from the terminal.
 
 ## Remix Setup
 - Go to Remix.
