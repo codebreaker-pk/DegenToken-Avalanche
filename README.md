@@ -25,7 +25,7 @@ Copy the deployed contract address from the terminal.
 - Go to Remix.
 - Create a new Solidity file named DegenToken.sol.
 
-- Copy and paste the content of the DegenToken.sol contract from this repository into the Remix editor.
+- Copy and paste the content of the UpdatedDegenToken.sol contract from this repository into the Remix editor.
 
 ## Usage
 - To use the DegenToken contract in Remix:
